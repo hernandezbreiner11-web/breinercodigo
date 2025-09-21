@@ -1,0 +1,128 @@
+/* Reset básico: limpia márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Encabezado */
+.encabezado {
+  background-color: #222;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.nombre {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.titulo {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Sección principal */
+.principal {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Bloque sobre mí */
+.sobre-mi {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.texto h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.texto p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* Botones */
+.botones {
+  margin-top: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 1rem;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #444;
+}
+
+.btn.claro {
+  background: #eee;
+  color: #222;
+  border: 1px solid #ccc;
+}
+
+.btn.claro:hover {
+  background: #ddd;
+}
+
+/* Imagen */
+.imagen img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+.pie {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Responsive: ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .sobre-mi {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .botones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

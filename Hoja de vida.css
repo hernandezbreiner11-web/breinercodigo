@@ -1,0 +1,135 @@
+/* Reset básico: elimina márgenes, rellenos y ajusta el modelo de caja */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* ---------- ENCABEZADO ---------- */
+.encabezado {
+  background-color: #222; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
+  padding: 2rem 1rem; /* Espaciado interno */
+  text-align: center; /* Centra el texto */
+}
+
+.nombre {
+  font-size: 2.5rem; /* Tamaño grande para el nombre */
+  margin-bottom: 0.5rem;
+}
+
+.titulo {
+  font-size: 1.2rem;
+  color: #ccc; /* Color gris claro */
+}
+
+/* ---------- SECCIÓN PRINCIPAL ---------- */
+.principal {
+  padding: 2rem;
+  max-width: 1200px; /* Ancho máximo */
+  margin: auto; /* Centra el contenido */
+}
+
+/* Contenedores principales: sobre mí, hoja de vida y portafolio */
+.sobre-mi,
+.hoja-vida,
+.portafolio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem; /* Espaciado entre elementos */
+  background: #fff;
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  margin-bottom: 2rem;
+}
+
+/* Texto dentro de cada sección */
+.texto {
+  flex: 1; /* Ocupar el espacio disponible */
+  min-width: 280px; /* Para que no se encoja demasiado */
+}
+
+.texto h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.texto p {
+  margin-bottom: 1rem;
+  color: #555; /* Texto gris */
+}
+
+/* Botones */
+.botones {
+  margin-top: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 1rem;
+  transition: background 0.3s; /* Animación suave */
+}
+
+.btn:hover {
+  background: #444;
+}
+
+/* Botón claro */
+.btn.claro {
+  background: #eee;
+  color: #222;
+  border: 1px solid #ccc;
+}
+
+.btn.claro:hover {
+  background: #ddd;
+}
+
+/* Imagen de perfil */
+.imagen img {
+  width: 300px;
+  max-width: 100%; /* Para que sea responsive */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Sombra más marcada */
+}
+
+/* ---------- PIE DE PÁGINA ---------- */
+.pie {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .sobre-mi,
+  .hoja-vida,
+  .portafolio {
+    flex-direction: column; /* Cambia a columnas */
+    text-align: center; /* Centra texto e imagen */
+  }
+
+  .botones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
